@@ -7,8 +7,7 @@ import base64
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
-origins = ["https://linh-website.onrender.com/projects",
-           "http://localhost:3000"]
+origins = ["https://linh-website.onrender.com/projects"]
 # Allow CORS for all origins, methods, headers
 app.add_middleware(
     CORSMiddleware,
