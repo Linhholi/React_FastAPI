@@ -26,7 +26,8 @@ const Projects = () => {
     setLoading(true); // Set loading state when the request starts
 
     try {
-      const endpoint = "http://localhost:8000/upload_image/"
+      // const endpoint = "http://localhost:8000/upload_image/"
+      const endpoint = "https://linh-website-backend.onrender.com/upload_image/"
       const response = await fetch(endpoint, {
         method: "POST",
         body: formData,
