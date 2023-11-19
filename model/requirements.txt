@@ -2,3 +2,4 @@ fastapi
 python-multipart
 uvicorn
 ultralytics
+numpy==1.21.6
