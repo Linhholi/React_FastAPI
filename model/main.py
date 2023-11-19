@@ -10,7 +10,7 @@ app = FastAPI()
 # Allow CORS for all origins, methods, headers
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://linh-website.onrender.com/"],  # Change this to your frontend URL in production
+    allow_origins=["*"],  # Change this to your frontend URL in production
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
