@@ -1,0 +1,56 @@
+.desktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 230px;
+    position: relative;
+    background-color: #000;
+}
+.desktop .header-line {
+    display: inline;
+    justify-content: space-around;
+}
+.desktop .text-wrapper {
+    color: #ffffff;
+    font-family: "Saira Condensed-Bold", Helvetica;
+    font-size: 70px;
+    font-weight: 700;
+    left: 160px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 79px;
+    width: 509px;
+}
+.desktop .icon {
+    width: 30px;
+    height: 30px;
+    top: 79px;
+    color: #ffffff;
+    line-height: normal;
+    position: absolute;
+    right: 160px;
+}
+.desktop .overlap-group {
+    background-color: #ffffff;
+    border: 5px solid;
+    border-color: #ff0000;
+    height: 100px;
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    margin-top: 200px;
+}
+
+.desktop .menu-button {
+    color: #000000;
+    font-family: "Saira Condensed-Bold", Helvetica;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    padding: 20px;
+}

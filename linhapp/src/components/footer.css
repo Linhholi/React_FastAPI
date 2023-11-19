@@ -1,0 +1,48 @@
+.text-footer {
+    position: flex;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 50px;
+    background-color: #000;
+    display: flex;
+}
+
+.text-footer .text-wrapper-1 {
+    color: #ff0000;
+    font-family: "Saira Condensed-Bold", Helvetica;
+    font-size: 30px;
+    font-weight: 700;
+    left: 160px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+}
+.text-footer .text-wrapper-2 {
+    color: #ffffff;
+    font-family: "Saira Condensed-Bold", Helvetica;
+    font-size: 30px;
+    font-weight: 700;
+    left: 340px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+}
+
+.text-footer .icon-github {
+    width: 30px;
+    height: 30px;
+    color: #ffffff;
+    line-height: normal;
+    position: absolute;
+    right: 160px;
+}
+
+.text-footer .icon-linkedin {
+    width: 30px;
+    height: 30px;
+    color: #ffffff;
+    line-height: normal;
+    position: absolute;
+    right: 200px;
+}

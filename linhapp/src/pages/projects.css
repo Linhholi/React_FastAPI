@@ -1,0 +1,72 @@
+/* .icon-text {
+    font-family: "Saira Condensed-bold", Helvetica;
+    font-size: 50px;
+    font-weight: 700;
+    margin-left: 160px;
+    margin-right: 160px;
+    margin-top: 100px;
+}
+.icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: black;
+}
+.photoUpload {
+    font-family: "Saira Condensed-Bold", Helvetica;
+    font-weight: 700;
+    margin-left: 160px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.processingBlock {
+    font-family: "Saira Condensed-Bold", Helvetica;
+    font-weight: 700;
+    margin-left: 160px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+} */
+.projects {
+    font-family: "Saira Condensed-bold", Helvetica;
+    font-size: 40px;
+    font-weight: 700;
+    margin-left: 160px;
+    margin-right: 160px;
+    margin-top: 100px;
+}
+.icon-text {
+    display: flex;
+    align-items: center; /* Aligns items vertically */
+}
+.icon {
+    margin-right: 40px; /* Adjust spacing between icon and text */
+    display: flex; /* Ensures the icon container is a flex container */
+    align-items: center; /* Aligns items within the icon container */
+}
+.icon svg {
+    vertical-align: middle; /* Aligns the icon vertically with the text */
+  }
+.photoUpload {
+    font-size: 20px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.processingText {
+    display: grid;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.plate {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.imageContainer {
+    display: flex;
+    justify-content: center; /* Horizontally center the image */
+    align-items: center; /* Vertically center the image */
+}
+
