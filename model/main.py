@@ -1,5 +1,5 @@
-from fastapi import FastAPI, UploadFile, File
-from typing import List
+from fastapi import FastAPI, UploadFile
+from fastapi.responses import JSONResponse
 from predict import predict
 from PIL import Image
 from io import BytesIO
@@ -29,9 +29,18 @@ async def upload_image(file_upload: UploadFile):
     buffered = BytesIO()
     result_img.save(buffered, format="JPEG")  # Save the processed image to BytesIO
     img_str = base64.b64encode(buffered.getvalue()).decode('utf-8')  # Encode to Base64
+    # Create the response dictionary
+    response_data = {"result": text, "image": f"data:image/jpeg;base64,{img_str}"}
 
+    # Create the JSON response
+    response = JSONResponse(content=response_data)
+
+    # Set the Access-Control-Allow-Origin header
+    response.headers["Access-Control-Allow-Origin"] = "https://linh-website.onrender.com"
+
+    return response
     # Return your YOLO model's results or any other processing result
-    return {"result": text, "image": f"data:image/jpeg;base64,{img_str}"}
+    # return {"result": text, "image": f"data:image/jpeg;base64,{img_str}"}
 
 # Run the FastAPI app using Uvicorn
 if __name__ == "__main__":
