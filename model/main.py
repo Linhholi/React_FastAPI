@@ -7,7 +7,7 @@ import base64
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
-origins = ["https://linh-website.onrender.com/projects"]
+origins = ["https://leslienguyen.azurewebsites.net/"]
 # Allow CORS for all origins, methods, headers
 app.add_middleware(
     CORSMiddleware,
@@ -37,7 +37,7 @@ async def upload_image(file_upload: UploadFile):
     response = JSONResponse(content=response_data)
 
     # Set the Access-Control-Allow-Origin header
-    response.headers["Access-Control-Allow-Origin"] = "https://linh-website.onrender.com/projects"
+    response.headers["Access-Control-Allow-Origin"] = "https://leslienguyen.azurewebsites.net/"
 
     return response
     # Return your YOLO model's results or any other processing result

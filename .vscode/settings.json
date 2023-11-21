@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/12fc001e-b987-475b-ae58-b7715cd3d667/resourceGroups/React_FastAPI/providers/Microsoft.Web/sites/leslienguyen",
+    "appService.deploySubpath": "linhapp/build"
+}
