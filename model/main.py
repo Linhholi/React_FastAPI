@@ -37,7 +37,7 @@ async def upload_image(file_upload: UploadFile):
     response = JSONResponse(content=response_data)
 
     # Set the Access-Control-Allow-Origin header
-    response.headers["Access-Control-Allow-Origin"] = "https://leslienguyen.azurewebsites.net/"
+    response.headers["Access-Control-Allow-Origin"] = "https://linh-nguyen.vercel.app/"
 
     return response
     # Return your YOLO model's results or any other processing result
